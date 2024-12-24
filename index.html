@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Now Button</title>
+    <style>
+        /* Styles for the call button */
+        .call-now-button {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #ff8c00;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            text-decoration: none;
+        }
+
+        .call-now-button svg {
+            width: 28px;
+            height: 28px;
+            fill: #fff;
+        }
+
+        /* Hide button on larger screens */
+        @media (min-width: 768px) {
+            .call-now-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Call button with SVG icon -->
+    <a href="tel:+91XXXXXXXXXX" class="call-now-button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M22 16.92v3.35a2.77 2.77 0 01-3 2.73A19.5 19.5 0 013 3.07 2.77 2.77 0 015.73 0H9a1 1 0 011 1.13a15.34 15.34 0 001 5.26a1 1 0 01-.29 1l-2.2 2.2a16 16 0 007.27 7.27l2.2-2.2a1 1 0 011-.29a15.34 15.34 0 005.26 1a1 1 0 011.13 1z"/>
+        </svg>
+    </a>
+
+    <script>
+        // JavaScript functionality (if any additional functionality is required)
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("Call Now button loaded with SVG icon.");
+        });
+    </script>
+</body>
+</html>
